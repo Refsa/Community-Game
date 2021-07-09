@@ -166,7 +166,6 @@ rm -f "${PATCHFILE}"
 
 # Create the patch
 diff -Naurw "$ASSET_PATH" "$BACKUP_FULLPATH" > "$PATCHFILE"
-create_file_mode_patch
 echo "Patch file created: $PATCHFILE $(stat --printf="%s" "$PATCHFILE") bytes."
 
 # Ask the user if they want to immediately apply this patch
